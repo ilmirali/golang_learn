@@ -2,51 +2,48 @@ package main
 
 import (
 "fmt"
-"math")
-// int | float 32 | string | bool
+//"math"
+)
 
-var i, a, b, c = 112 , 0.1, "Text", false
-var a1 float32
-var a2 float64
-var b1 int
-var c1 bool
-var d1 string
-const r42 = 42
-
-
-
-//b string = 't'
-//c bool = false 
+var input string
 
 func main(){
-// комментарий
-var j2 = 23
+x:= 42
+y:= 8
 
-fmt.Println(r42)
+res:= x+y
+fmt.Println(res)
 
-j := j2 + 7
-x,y := 10,20
+res = x-y
+fmt.Println(res)
 
-fmt.Println("Кириллица!")
-fmt.Println(math.Max(9,0))	
-fmt.Println(i)
+res = x*y
+fmt.Println(res)
 
-i = -1
-fmt.Println(i)
+res = x/y
+fmt.Println(res)
 
-i = 3
-fmt.Println(i,j,x,y)
-fmt.Println(a,b,c)
+res = x%y
+fmt.Println(res)
 
-fmt.Println("---")
+s1:= "привет"
+s2:= "мир"
+fmt.Println(s1 + ", " + s2 + "!")
+//fmt.Println(s1 + s2)
 
-fmt.Println("a1", a1)
-fmt.Println("a2", a2)
-fmt.Println("b1", b1)
-fmt.Println("c1", c1)
-fmt.Println("d1", d1)
+fmt.Println("fmt.Println(x==y)",x==y)
+fmt.Println("fmt.Println(x!=y)",x!=y)
+fmt.Println("fmt.Println(x>y)",x>y)
+fmt.Println("fmt.Println(x<y)",x<y)
+
+fmt.Println("(x!=y) && (x<y) THIS IS ", (x!=y) && (x<y))
+fmt.Println("(x!=y) || (x<y) THIS IS ", (x!=y) || (x<y))
+fmt.Println("!(x!=y) THIS IS", !(x!=y))
+
+//знак амперсанда & перед именем переменной - он используется для возврата адреса переменной
+//fmt.Scanln(&input)
+//fmt.Println(input)
+
+fmt.Scan(&input)
+fmt.Println(input)
 }
-
-/* 
-comments
- */
