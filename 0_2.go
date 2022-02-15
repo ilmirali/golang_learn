@@ -10,7 +10,11 @@ var input string
 func main(){
 x:= 42
 y:= 8
+x1:= 100
+y1:= 20
 
+fmt.Println("x1+y1   =", x1+y1)
+fmt.Println("200+100 =", 200+100)
 res:= x+y
 fmt.Println(res)
 
