@@ -7,7 +7,7 @@ func main(){
 	fmt.Scan(&i)
 		
 	switch {
-	case i >0 && i<10: fmt.Println("0..10")
+	case i>0  && i<10: fmt.Println("0..10")
 	case i>9  && i<20: fmt.Println("10..20")
 	case i>19 && i<31: fmt.Println("20..30")
 	default: fmt.Println("something else")
