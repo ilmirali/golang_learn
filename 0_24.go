@@ -12,10 +12,16 @@ func (x Contact) welcome() {
 	fmt.Println(x.age)
 }
 
+func welcome2(x Contact){
+	fmt.Println(x.name)
+	fmt.Println(x.age)
+}
+
 func main() {
-	y := Contact{"Dafna", 49}
+	//y := Contact{"Dafna", 49}
 	//fmt.Println(y)
-	x := Contact{"Джеймс", 42}
-	x.welcome()
-	y.welcome()
+	x := Contact{"Lorein", 42}
+	//x.welcome()
+	//y.welcome()
+	welcome2(x)
 }
