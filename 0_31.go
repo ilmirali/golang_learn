@@ -16,8 +16,16 @@ func main() {
 		sum += v
 	}
 
+	res := 0
+	nums := [3]int{2,4,6}
+	for i,v := range nums {
+		if i%2 == 0{
+			res += v
+		}
+	}
 	
 	fmt.Println(sum)
+	fmt.Println(0%2==0)
 }
 
 
